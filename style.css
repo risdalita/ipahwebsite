@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --orange: #6b0585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 40px;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--orange);
+  padding: 0.2rem 1rem;
+}
+
+/* top navbar*/
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 20px;
+}
+nav .logo h4 {
+  color: whitesmoke;
+  text-shadow: 2px 8px 18px rgb(53, 53, 126);
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: 'Poppins';
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+ul li a:hover {
+  opacity: 0.8;
+  font-weight: bolder;
+}
+
+/* akhir top navbar */
+
+/* top gambar */
+.top-main {
+  background-image: url(../img/mekkah\ dari\ kejauhan.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+}
+/* akhir top gambar*/
+
+/* about */
+.about {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.wrapper {
+  width: 90%;
+}
+
+.wrapper h1 span {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: var(--orange);
+}
+
+.content {
+  float: left;
+  width: 50%;
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+.sidebar {
+  float: right;
+}
+
+/* akhir about */
+
+/* gallery */
+.gallery {
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+.container {
+  text-align: center;
+}
+
+.container img {
+  width: 35%;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+/* akhir gallery */
+
+/* fasilitas utama */
+.paket {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.paket .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.paket .box-container .box {
+  flex: 1 1 30rem;
+  border: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.paket .box-container .box i {
+  font-size: 5rem;
+  color: var(--orange);
+  padding: 1rem;
+}
+
+.paket .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.paket .box-container .box p {
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.paket .box-container .box:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* fasilitas utama */
+
+/* paket umrah */
+.program {
+  /* min-height: 100vmax; */
+  background-position: top;
+}
+
+.info-program {
+  flex-wrap: wrap;
+  display: inline;
+  background-color: #6b0585;
+}
+
+.img-program img {
+  margin-top: -100px;
+}
+
+.info-program .content {
+  width: 100%;
+  background-color: white;
+  padding: 30px 20px;
+  border: 2px solid #333;
+  box-shadow: 5px 10px #333;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
+.info-program .content button {
+  border-radius: 50px;
+  background-color: var(--orange);
+  padding: 13px 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  color: white;
+}
+/* akhir paket umrah */
+
+/* syarat dan ketentuan */
+.syarat {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+.isi-syarat span {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.wrapper-syarat {
+  width: 80%;
+}
+.isi-syarat {
+  text-align: justify;
+  padding: 0 40px 25px 40px;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.isi-content li {
+  font-size: 50px;
+}
+.side {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* akhir syarat dan ketentuan */
+
+/* contact */
+.contact {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.contact-container .box h4 {
+  font-size: 1.7em;
+}
+
+.contact-container .box p {
+  font-size: 1.3em;
+  word-spacing: 2px;
+
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.box .col-4 {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+/* akhir contact */
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer i {
+  color: red;
+}
+/* akhir footer */
+
+/* humberger menu */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* humberger menu animasi */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle::after {
+  opacity: 1;
+}
+/* akhir humberger menu animasi */
+
+/* responsiv breakpoint */
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(197, 232, 255, 0.966);
+    z-index: -1;
+    transform: translatex(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  ul li a:hover {
+    opacity: 0.5;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .heading span {
+    font-size: 3rem;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .wrapper h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .wrapper p {
+    font-size: 1rem;
+  }
+
+  .content i {
+    float: left;
+  }
+
+  .sidebar img {
+    width: 100%;
+    float: right;
+  }
+
+  .syarat .space span {
+  }
+
+  .side {
+    display: inline-block;
+  }
+
+  .isi-side {
+    margin-bottom: 30px;
+  }
+
+  .contact-container .box .col-4 {
+    width: 100%;
+  }
+
+  .img-program {
+    width: 100%;
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .info-program {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .info-program .content {
+    font-size: 90%;
+  }
+}
